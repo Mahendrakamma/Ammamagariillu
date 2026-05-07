@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserve a Table — అమ్మమ్మ గారి ఇల్లు</title>
+    <meta name="description"
+        content="Book your table at అమ్మమ్మ గారి ఇల్లు for an unforgettable fine dining experience." />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Add some padding top for the reservation section so it's not hidden behind navbar */
+        #reservation {
+            padding-top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ─── NAVBAR ─── -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo"><img src="logo.png" alt="Ammamma Gari Illu Logo" class="nav-logo-img" />
+            అమ్మమ్మ
+            గారి ఇల్లు</a>
+        <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#reviews">Reviews</a></li>
+            <li><a href="reservation.html">Contact</a></li>
+        </ul>
+        <button class="nav-reserve-btn" onclick="window.location.href='reservation.html'">Reserve</button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ─── MOBILE MENU ─── -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose" aria-label="Close menu">&times;</button>
+        <a href="index.html#about">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="reservation.html">Reserve</a>
+    </div>
+
+    <!-- ─── RESERVATION ─── -->
+    <section class="section reservation" id="reservation">
+        <div class="section-header reveal">
+            <span class="section-tag">Book Your Experience</span>
+            <h2 class="section-title">Reserve a Table</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="reservation-wrapper">
+            <div class="reservation-info reveal">
+                <h3>We'd Love to Host You</h3>
+                <p>Whether it's an intimate dinner for two or a celebration with friends, our team is dedicated to
+                    making your
+                    evening exceptional.</p>
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <span>ELURU, Santhi Nager Andhra Pradesh</span>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <span>+91 (8328477901 )</span>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">🕐</div>
+                    <span>mon — Sun: 7:30 am — 11:00 PM</span>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <span>kammanagamahendrababu@gmail.com</span>
+                </div>
+            </div>
+            <form class="reservation-form reveal" id="reservationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" placeholder="John" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" placeholder="Doe" required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <select id="time" required>
+                            <option value="">Select time</option>
+                            <option>5:30 PM</option>
+                            <option>6:00 PM</option>
+                            <option>6:30 PM</option>
+                            <option>7:00 PM</option>
+                            <option>7:30 PM</option>
+                            <option>8:00 PM</option>
+                            <option>8:30 PM</option>
+                            <option>9:00 PM</option>
+                            <option>9:30 PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guests">Guests</label>
+                        <select id="guests" required>
+                            <option value="">How many?</option>
+                            <option>1 Guest</option>
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                            <option>5 Guests</option>
+                            <option>6+ Guests</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="you@email.com" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Special Requests</label>
+                    <textarea id="notes" placeholder="Allergies, celebrations, seating preferences..."></textarea>
+                </div>
+                <button type="submit" class="form-submit">Reserve a Table</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-logo">అమ్మమ్మ గారి ఇల్లు</a>
+                <p>An intimate fine dining experience where culinary artistry meets warm hospitality. Every visit is a
+                    celebration of flavour.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="index.html#about">Our Story</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#reviews">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Hours</h4>
+                <ul>
+                    <li><a href="#">Monday — Thursday: 7:30 AM – 10 PM</a></li>
+                    <li><a href="#">Fri — Sat: 7:30 AM – 11 PM</a></li>
+                    <li><a href="#">Sunday: 7:00 AM – 12 PM</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/mahendrachowdary_kamma/" target="_blank"
+                            rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="https://wa.me/918328477901" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 అమ్మమ్మ గారి ఇల్లు. All rights reserved.</span>
+            <div class="social-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
